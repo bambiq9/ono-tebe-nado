@@ -76,6 +76,7 @@ a {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: -20%;
   color: #fff;
   z-index: -2;
   padding: 165px 50px 50px;
@@ -112,7 +113,6 @@ a {
 .aligned-text_right {
   line-height: 100px;
   text-align: right;
-  ;
 }
 
 .letter-spacing-extended {
@@ -156,13 +156,17 @@ a {
   line-height: 25.83px;
 }
 
+.bet-button:hover {
+  background-color: red;
+}
+
 
 /* LOTS */
 
 .lots {
   /* background-color: bisque; */
   padding: 0 24px;
-  margin-bottom: 146px;
+  margin-bottom: 140px;
 }
 
 .lots__heading {
@@ -175,34 +179,36 @@ a {
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   gap: 25px;
-  list-style-type: none;
+  list-style: none;
+  margin-bottom: 31px;
 }
 
 .lots__card-list-item {
-  /* background-color: azure; */
-  font-size: 20px;
-  font-weight: 400;
+  flex-grow: 1;
+  flex-basis: 334px;
 }
 
 .card {
-  display: flex;
   position: relative;
-  padding: 51px 40px 17px;
-  color: #fff;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 51px 40px 48px;
   height: 100%;
+  color: #fff;
   z-index: -2;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: 50% 3%;
+  background-size: 164%;
+  background-position: 51%;
 }
 
 .card_type_book {
@@ -243,6 +249,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 72px;
+  margin-bottom: 180px;
 }
 
 .about__logo {
@@ -261,7 +268,6 @@ a {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
-  line-height: 46.96px;
 }
 
 .about__description {
@@ -269,5 +275,43 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-top: 9px;
 }
 
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: none;
+}
