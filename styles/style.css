@@ -3,6 +3,10 @@ a {
   border-bottom: 1px solid #000;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -76,7 +80,7 @@ a {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: -20%;
+  background-position: 51%;
   color: #fff;
   z-index: -2;
   padding: 165px 50px 50px;
@@ -120,7 +124,7 @@ a {
 }
 
 .no-letter-spacing {
-  letter-spacing: 0.3em;
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -301,6 +305,10 @@ a {
 
 .footer__menu-link {
   font-size: 18px;
+}
+
+.footer__menu-link_active {
+  border: none;
 }
 
 .footer__social-list {
