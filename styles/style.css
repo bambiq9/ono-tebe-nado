@@ -8,6 +8,26 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.letter-spacing-extended-06 {
+  letter-spacing: 0.6em;
+}
+
+.letter-spacing-reduced-001 {
+  letter-spacing: -0.01em;
+}
+
+.letter-spacing-reduced-005 {
+  letter-spacing: -0.05em;
+}
+
+.word-spacing-extended-09 {
+  word-spacing: 0.9em;
+}
+
 /* -----
         HEADER 
                 -----*/
@@ -84,7 +104,6 @@
   margin-bottom: 136px;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -111,22 +130,6 @@
   text-align: right;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 0.6em;
-}
-
-.letter-spacing-V {
-  letter-spacing: -0.05em;
-}
-
-.letter-spacing-nikto {
-  letter-spacing: -0.04em;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
 .cover__description {
   display: flex;
   justify-content: space-between;
@@ -139,10 +142,6 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-}
-
-.word-spacing-extended {
-  word-spacing: 0.9em;
 }
 
 .bet-button {
@@ -198,7 +197,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 51px 40px 48px;
+  padding: 50px 40px 48px;
   color: #fff;
   font-size: 20px;
 }
@@ -251,8 +250,7 @@
   grid-template-columns: 1fr 3fr;
   align-items: center;
   column-gap: 72px;
-  margin: 0 24px;
-  margin-bottom: 180px;
+  margin: 0 24px 181px;
   padding-top: 42px;
   padding-left: 47px;
 }
@@ -269,18 +267,18 @@
 }
 
 .about__title {
-  align-self: center;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-}
+} 
 
 .about__description {
   display: flex;
   flex-direction: column;
   grid-column: 2;
   gap: 24px;
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 .about__text {
@@ -296,7 +294,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 50px 88px;
 }
 
 .footer__menu-list {
