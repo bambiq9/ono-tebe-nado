@@ -1,16 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  border-bottom: 1px solid #000;
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -21,7 +8,9 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* HEADER */
+/* -----
+        HEADER 
+                -----*/
 
 .header {
   display: grid;
@@ -33,13 +22,13 @@ a:hover {
 
 .header__links-list {
   display: flex;
-  gap: 34px;
+  gap: 30px;
   font-size: 18px;
-
   line-height: 21.13px;
 }
 
 .header__links-list-item {
+  padding-left: 4px;
   list-style: circle;
 }
 
@@ -47,12 +36,15 @@ a:hover {
   list-style: none;
 }
 
+.header__link_active {
+  border: 0;
+}
+
 .header__logo {
   text-align: center;
 }
 
 .header__logo .header__link {
-  display: block;
   border: 0;
 }
 
@@ -72,7 +64,9 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
-/* SECTION */
+/* -----
+        COVER 
+              -----*/
 
 .cover {
   position: relative;
@@ -106,7 +100,7 @@ a:hover {
   line-height: 115px;
   text-align: left;
 }
-
+  
 .aligned-text_center {
   line-height: 100px;
   text-align: center;
@@ -119,6 +113,14 @@ a:hover {
 
 .letter-spacing-extended {
   letter-spacing: 0.6em;
+}
+
+.letter-spacing-V {
+  letter-spacing: -0.05em;
+}
+
+.letter-spacing-nikto {
+  letter-spacing: -0.04em;
 }
 
 .no-letter-spacing {
@@ -143,10 +145,6 @@ a:hover {
   word-spacing: 0.9em;
 }
 
-.word-spacing-extended-plus {
-  word-spacing: 1.1em;
-}
-
 .bet-button {
   border: 1px solid #fff;
   padding: 12px 32px;
@@ -162,7 +160,9 @@ a:hover {
   background-color: red;
 }
 
-/* LOTS */
+/* -----
+        LOTS 
+              -----*/
 
 .lots {
   margin-bottom: 140px;
@@ -194,14 +194,12 @@ a:hover {
 .card {
   position: relative;
   z-index: -2;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 51px 40px 48px;
   color: #fff;
-  font-weight: 400;
   font-size: 20px;
 }
 
@@ -224,16 +222,17 @@ a:hover {
 }
 
 .card__title {
-  z-index: 1;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  text-decoration: underline;
   text-transform: uppercase;
 }
 
+.card__title_underline {
+  border-bottom: 1px solid #fff;
+}
+
 .card__text {
-  z-index: 1;
   line-height: 24px;
 }
 
@@ -243,7 +242,9 @@ a:hover {
   line-height: 23.48px;
 }
 
-/* ABOUT */
+/* -----
+        ABOUT 
+              -----*/
 
 .about {
   display: grid;
@@ -283,13 +284,14 @@ a:hover {
 }
 
 .about__text {
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
 }
 
-/* FOOTER */
+/* -----
+        FOOTER 
+                -----*/
 
 .footer {
   display: flex;
