@@ -137,7 +137,6 @@
 }
 
 .bet-button {
-  z-index: 2;
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
@@ -148,6 +147,12 @@
   text-transform: uppercase;
   background: none;
   cursor: pointer;
+}
+
+.cover__title,
+.cover__description-text,
+.bet-button {
+  z-index: 2;
 }
 
 /* -----
@@ -226,6 +231,11 @@
   margin-left: 40px;
   font-size: 20px;
   line-height: 23.48px;
+}
+
+.card__title, 
+.card__text {
+  z-index: 2;
 }
 
 /* -----
